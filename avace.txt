@@ -1,0 +1,30 @@
+MACHINE LEARNING
+
+"la IA puede simular nuestra inteligencia pero no nuestra creatividad".
+
+Machine learning -> aprendizaje automatico.
+-aprender de los datos
+-no progrmacion explicita
+-descubrimiento de patrones ocultos
+-toma de decisiones basada en datos
+
+tipos de aprendizaje en Machine Learning
+-supervisado
+-no supervisado
+-por refuerzo
+
+terminologia
+ etiqueta. label, loqe se intenta interpretar
+ variable de entrada. feature ejemplo o dato de entrada.
+ modelo. model define la relacion entre features y labels y tiene 2 fases.
+  fase de entrenamiento.
+  
+ y=wx+b
+ y-> es el label
+ x-> la feature de ese ejemplo de entrada
+ w-> es la pendiente de la recta que generamente se llama (peso)
+ b-> es el punto de interseccion de la recta en el eje y se llama (sesgo)
+
+tarea.
+ crear una tabla. en excel
+ donde existan 4 caracteristicas.
