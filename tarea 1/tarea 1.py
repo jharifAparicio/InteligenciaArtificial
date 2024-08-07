@@ -8,17 +8,11 @@ color_gato=[]
 conteo_color={}
 edades=[]
 
-#obtenenmos el directiorio actual
-directorio=os.getcwd()
-#creamos el archivo de salida
-salida='analisis.txt'
-path_salida=os.path.join(directorio,salida)
-
 #abrimos y leemos la ruta del archivo
 file_path = './cats_dataset.csv'
 
 # Abrir y leer el archivo CSV
-with open(file_path, newline='') as csvfile, open(path_salida, 'w') as salida:
+with open(file_path, newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     # Imprimir los nombres de las columnas
     print("Columnas:", reader.fieldnames)
@@ -54,14 +48,14 @@ for color in color_gato:
 porcentaje_color = {color: (conteo / total_gatos) * 100 for color, conteo in conteo_color.items()}
 
 # Escribir los resultados en el archivo .txt
-salida.write(" Conteo de generos:\n")
-salida.write(f" Macho: {conteo_genero['Male']}\n")
-salida.write(f" Hembras: {conteo_genero['Female']}\n")
-salida.write(f"Total de gatos: {total_gatos}\n")
-salida.write("Porcentaje de géneros:\n")
-salida.write(f" Macho: {porcentaje_generos['Male']:.2f}%\n")
-salida.write(f" Hembras: {porcentaje_generos['Female']:.2f}%\n")
-salida.write(f"Edad promedio: {promedio_edades} años\n")
-salida.write("Porcentaje de colores:\n")
+print("Conteo de generos:")
+print(f" Macho: {conteo_genero['Male']}")
+print(f" Hembras: {conteo_genero['Female']}")
+print(f"Total de gatos: {total_gatos}")
+print("Porcentaje de géneros:")
+print(f" Macho: {porcentaje_generos['Male']:.2f}")
+print(f" Hembras: {porcentaje_generos['Female']:.2f}")
+print(f"Edad promedio: {promedio_edades} años")
+print("Porcentaje de colores:")
 for color, porcentaje in porcentaje_color.items():
-    salida.write(f" {color}: {porcentaje:.2f}%\n")
+    print(f" {color}: {porcentaje:.2f} "+"   ")
