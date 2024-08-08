@@ -28,3 +28,5 @@ terminologia
 tarea.
  crear una tabla. en excel
  donde existan 4 caracteristicas.
+ hallar el peso de los valores
+ 
