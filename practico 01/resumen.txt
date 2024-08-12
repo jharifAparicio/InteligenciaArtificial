@@ -1,0 +1,15 @@
+APARICIO CASILLAS JHARIF NELSON
+
+el codigo que se presento realiza lo siguiente.
+
+primero colocamos una semmilla con np.ramdom.seed para evitar que se generen diferentes datos cada vez que se ejecute.
+
+y luego de colocar la semilla genenramos estaturas en la linea 7, los parametros que usamos son los siguientes, de 1,4 metros hasta 2,00 metros, 100 estaturas y lo guardamos en la variable estatura y creamos el diccionario de pesos.
+
+seguidamente con una secuencia for iteramos las estaturas y para cada uno calculamos el peso maximo y minimo y mediante la funcion random asignamos un peso aleatorio, y lo redondeamos a 2 decimales.
+
+luego de realizar lo anterior con la libreria pandas y si funcion dataFrame, creamos un data de las estaturas y los pesos y lo exportamos utilizando la funcion .to_csv.
+
+seguimos con la busqueda de la pendiente(m) y la interseccion(b). utilizandos las formulas correspondientes.
+
+y por ultimo visualizamos los valores
